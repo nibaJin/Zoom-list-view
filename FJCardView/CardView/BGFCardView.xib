@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BGFCardView">
+            <connections>
+                <outlet property="mainView" destination="iN0-l3-epB" id="weK-g6-4nI"/>
+                <outlet property="scrollerView" destination="3sz-4N-brh" id="Vsy-de-WSM"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="162"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3sz-4N-brh">
+                    <rect key="frame" x="0.0" y="0.0" width="277" height="162"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3sz-4N-brh" secondAttribute="bottom" id="3Mw-oq-02G"/>
+                <constraint firstItem="3sz-4N-brh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DMF-pe-xOz"/>
+                <constraint firstAttribute="trailing" secondItem="3sz-4N-brh" secondAttribute="trailing" id="cFs-bB-2co"/>
+                <constraint firstItem="3sz-4N-brh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iPi-nn-Ntu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
